@@ -14,25 +14,57 @@
             <Entry x:Name="txtPesquisar" Placeholder="Digite o nome:"/>
             <Button Text="Pesquisar" x:Name="btn_pesquisar"
                 FontSize="Large" BackgroundColor="#363636" CornerRadius="15"/>
-            <ListView x:Name="ls_alunos">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Nome}" FontSize="Medium" TextColor="White"/>
-                                <Label Text=" - " />
-                                <Label Text="{Binding Ende}" FontSize="Medium" TextColor="White"/>
-                                <Label Text=" - " />
-                                <Label Text="{Binding Fone}" FontSize="Medium" TextColor="White"/>
-                                <Label Text=" - " />
-                                <Label Text="{Binding Idade}" FontSize="Medium" TextColor="White"/>
-                                <Label Text=" - " />
-                                <Label Text="{Binding Modalidade}" FontSize="Medium" TextColor="White"/>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ScrollView Orientation="Horizontal"
+                        HorizontalScrollBarVisibility="Always">
+                            <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="FillAndExpand"
+                             Padding="0"
+                             Spacing="0">
+                                <Label Text="{Binding Nome}"
+                           FontSize="Medium"
+                           TextColor="Black"
+                           LineBreakMode="NoWrap"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"/>
+                                <Label Text=" - "
+                           VerticalOptions="Center"/>
+                                <Label Text="{Binding Cpf}"
+                           FontSize="Medium"
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                                <Label Text=" - "
+                           VerticalOptions="Center"/>
+                                <Label Text="{Binding Fone}"
+                           FontSize="Medium"
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                                <Label Text=" - "
+                           VerticalOptions="Center"/>
+                                <Label Text="{Binding Idade}"
+                           FontSize="Medium"
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                                <Label Text=" - "
+                           VerticalOptions="Center"/>
+                                <Label Text="{Binding Modalidade}"
+                           FontSize="Medium"
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                                <Label Text=" - "
+                           VerticalOptions="Center"/>
+                                <Label Text="{Binding Peso}"
+                           FontSize="Medium"
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
                             </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                        </ScrollView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
