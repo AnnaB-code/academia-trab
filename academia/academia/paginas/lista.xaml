@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="academia.paginas.lista"
+                 BackgroundImageSource="https://i.pinimg.com/474x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg">
+        <ContentPage.Content>
+            <StackLayout Padding="30">
+            <Image Source="https://cdn-icons-png.flaticon.com/512/1999/1999053.png" HeightRequest="250"/>
+                <Label Text="Listagem de Alunos" FontFamily="MyAwesomeCustomFont"    
+                    VerticalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Title"
+                    TextColor="#7CB5FF"/>
+                <Button Text="Recarregar" x:Name="btn_recarregar"
+                        FontSize="Large" BackgroundColor="#002B64" CornerRadius="20"/>
+                <ListView x:Name="ls_alunos">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Nome}" FontSize="Medium" TextColor="Black" Padding="10"/>
+                                    <Label Text=" - " />
+                                    <Label Text="{Binding Cpf}" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text=" - " />
+                                    <Label Text="{Binding Fone}" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text=" - " />
+                                    <Label Text="{Binding Idade}" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text=" - " />
+                                    <Label Text="{Binding Modalidade}" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text=" - " />
+                                    <Label Text="{Binding peso}" FontSize="Medium" TextColor="Black"/>
+                            </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>

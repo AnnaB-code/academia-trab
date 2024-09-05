@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="academia.paginas.modalidade"
+             BackgroundImageSource="https://i.pinimg.com/474x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="https://images.emojiterra.com/google/noto-emoji/animated-emoji/1f4aa.gif" HeightRequest="200" IsAnimationPlaying="true"/>
+                <Label Text="✨Modalidades✨" FontSize="Title" TextColor="#D2691E" HorizontalTextAlignment="Center"/>
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="CenterAndExpand" BackgroundColor="#363636" Grid.ColumnSpan="2">
+                        <ImageButton Source="https://www.amaralnatacao.com.br/wp-content/uploads/Depositphotos_9501246_m-2015-1.jpg" BackgroundColor="LightPink" Aspect="AspectFill"
+                    CornerRadius="10" Margin="10" Padding="0,00,0,0"/>
+                        <Label Text="Natação" FontSize="Body"  TextColor="White " HorizontalTextAlignment="Center"/>
+                        <Label Text="R$150,00" FontSize="Caption"  TextColor="#DEB887" HorizontalTextAlignment="Center"/>
+                        <Label Text=" "/>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Row="1" Grid.Column="2" HorizontalOptions="CenterAndExpand" BackgroundColor="#363636" Grid.ColumnSpan="2">
+                        <ImageButton Source="https://www.glofox.com/wp-content/uploads/2019/07/pilates.jpg" BackgroundColor="LightBlue" Aspect="AspectFill"
+                    CornerRadius="10" Margin="10" Padding="0,00,0,0"/>
+                        <Label Text="Pillates" FontSize="Body"  TextColor="White " HorizontalTextAlignment="Center"/>
+                        <Label Text="R$100,00" FontSize="Caption"  TextColor="#DEB887" HorizontalTextAlignment="Center"/>
+                        <Label Text=""/>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Row="1" Grid.Column="4" HorizontalOptions="CenterAndExpand" BackgroundColor="#363636" Grid.ColumnSpan="2">
+                        <ImageButton Source="https://cdn.shopify.com/s/files/1/0646/4097/files/Las_Reglas_del_Brazilian_Jiu-Jitsu_BJJ_6_1024x1024.jpg?v=1695904192" BackgroundColor="LightGreen" Aspect="AspectFill"
+                    CornerRadius="10" Margin="10" Padding="0,00,0,0"/>
+                        <Label Text="Jiu-Jitsu" FontSize="Body"  TextColor="White " HorizontalTextAlignment="Center"/>
+                        <Label Text="R$210,00" FontSize="Caption"  TextColor="#DEB887" HorizontalTextAlignment="Center"/>
+                        <Label Text="" />
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" BackgroundColor="#363636" Grid.ColumnSpan="2">
+                        <ImageButton Source="https://cdn.dosb.de/alter_Datenbestand/Bilder_allgemein/sportarten/Karate/Karate_Training_Technik_Demonstration_dpa95678244.jpg" BackgroundColor="LightPink" Aspect="AspectFill"
+                    CornerRadius="10" Margin="10" Padding="0,00,0,0"/>
+                        <Label Text="Karate" FontSize="Body"  TextColor="White " HorizontalTextAlignment="Center"/>
+                        <Label Text="R$170,00" FontSize="Caption"  TextColor="#DEB887" HorizontalTextAlignment="Center"/>
+                        <Label Text="" />
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Row="2" Grid.Column="2" HorizontalOptions="CenterAndExpand" BackgroundColor="#363636" Grid.ColumnSpan="2">
+                        <ImageButton Source="https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2022/03/17094259/academia-8.jpg" BackgroundColor="LightBlue" Aspect="AspectFill"
+                    CornerRadius="10" Margin="10" Padding="0,00,0,0"/>
+                        <Label Text="Musculação" FontSize="Body"  TextColor="White " HorizontalTextAlignment="Center"/>
+                        <Label Text="R$90,00" FontSize="Caption"  TextColor="#DEB887" HorizontalTextAlignment="Center"/>
+                        <Label Text="" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Grid.Column="4" HorizontalOptions="CenterAndExpand" BackgroundColor="#363636" Grid.ColumnSpan="2">
+                        <ImageButton Source="https://www.fitdancespace.com/assets/img/site/2bca73376a1f6aa751db62553230906a.jpg" BackgroundColor="LightBlue" Aspect="AspectFill"
+                    CornerRadius="10" Margin="10" Padding="0,00,0,0"/>
+                        <Label Text="Fit Dance" FontSize="Body"  TextColor="White " HorizontalTextAlignment="Center"/>
+                        <Label Text="R$110,00" FontSize="Caption"  TextColor="#DEB887" HorizontalTextAlignment="Center"/>
+                        <Label Text=""/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

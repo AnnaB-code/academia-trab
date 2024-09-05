@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="academia.paginas.pesquisar"
+             BackgroundImageSource="https://i.pinimg.com/474x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Image Source="https://media.tenor.com/MwCyZjCguVAAAAAi/thinking-penguin.gif" IsAnimationPlaying="true"/>
+            <Label Text="Pesquisa de Alunos"  
+            VerticalOptions="Center"
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Large"
+            TextColor="Black" BackgroundColor="LightGray"/>
+            <Entry x:Name="txtPesquisar" Placeholder="Digite o nome:"/>
+            <Button Text="Pesquisar" x:Name="btn_pesquisar"
+                FontSize="Large" BackgroundColor="#363636" CornerRadius="15"/>
+            <ListView x:Name="ls_alunos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nome}" FontSize="Medium" TextColor="White"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Ende}" FontSize="Medium" TextColor="White"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Fone}" FontSize="Medium" TextColor="White"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Idade}" FontSize="Medium" TextColor="White"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Modalidade}" FontSize="Medium" TextColor="White"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+
+
+
+
+

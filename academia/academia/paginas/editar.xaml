@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="academia.paginas.editar"
+             BackgroundImageSource="https://i.pinimg.com/474x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="30">
+                <Image Source="https://cdn-icons-png.freepik.com/512/240/240173.png" WidthRequest="150" HeightRequest="150"/>
+            <Label Text="Alteração de Alunos" FontFamily="Times new roman"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"
+                TextColor="#116C11"/>
+            <Label Text="Digite o ID: " FontSize="Medium"
+                TextColor="#005100"/>
+            <Entry x:Name="txt_id" FontSize="Medium"
+                TextColor="Black" />
+            <Label Text="Nome: " FontSize="Medium"
+                TextColor="#005100"/>
+            <Entry x:Name="txt_nome" FontSize="Medium"
+                TextColor="Black"/>
+            <Label Text="Endereço: " FontSize="Medium"
+                TextColor="#005100"/>
+            <Entry x:Name="txt_cpf" FontSize="Medium"
+                TextColor="Black" />
+            <Label Text="Telefone: " FontSize="Medium"
+                TextColor="#005100"/>
+            <Entry x:Name="txt_fone" FontSize="Medium"
+                TextColor="Black" />
+            <Label Text="Idade: " FontSize="Medium"
+                TextColor="#005100"/>
+            <Entry x:Name="txt_idade" FontSize="Medium"
+                TextColor="Black" />
+            <Label Text="Modalidade: " FontSize="Medium"
+                TextColor="#005100"/>
+            <Entry x:Name="txt_modalidade" FontSize="Medium"
+                TextColor="Black" />
+            <Label Text="Peso: " FontSize="Medium"
+                TextColor="#005100"/>
+                <Entry x:Name="txt_peso" FontSize="Medium"
+                TextColor="Black" />
+                <Button Text="Editar" x:Name="btn_editar" FontSize="Medium"
+                 BackgroundColor="#116C11" CornerRadius="20"/>
+        </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

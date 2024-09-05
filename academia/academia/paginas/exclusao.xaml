@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="academia.paginas.exclusao"
+             BackgroundImageSource="https://i.pinimg.com/474x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Image Source="https://media1.tenor.com/m/mreXYlgYnUAAAAAC/sponge-bob-delete-memory.gif" HeightRequest="200" IsAnimationPlaying="true"/>
+            <Label Text="Exclusão de Alunos" FontFamily="Times new roman"
+                FontSize="Large"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="DarkGoldenrod"/>
+            <Entry x:Name="txt_id" TextColor="Black" Placeholder="Digite o ID:"/>
+            <Button Text="Excluir" x:Name="btn_excluir" FontSize="Medium"
+                    BackgroundColor="#9E6F00" CornerRadius="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

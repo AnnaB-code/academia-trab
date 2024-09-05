@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="academia.paginas.inicial"
+             BackgroundImageSource="https://i.pinimg.com/474x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="30">
+                <Image Source="https://www.qualchoice.com/assets/img/icons/MyAccount/Sign-In-and-New-Enrollment-Icon-01.png" HorizontalOptions="CenterAndExpand" WidthRequest="150" HeightRequest="150"/>
+            <Label Text="Inclusão de Alunos" FontFamily="Times new roman"    
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Title"
+                TextColor="#8A0000"/>
+            <Label Text="Nome: " FontSize="Medium"
+                TextColor="#690000"/>
+            <Entry x:Name="txt_nome"  FontSize="Medium"
+                TextColor="Black" />
+            <Label Text="CPF: " FontSize="Medium"
+                TextColor="#690000"/>
+            <Entry x:Name="txt_cpf" FontSize="Medium"
+                TextColor="Black" />
+            <Label Text="Telefone: " FontSize="Medium"
+                TextColor="#690000"/>
+            <Entry x:Name="txt_fone" FontSize="Medium"
+                TextColor="Black" />
+            <Label Text="Idade: " FontSize="Medium"
+                TextColor="#690000"/>
+            <Entry x:Name="txt_idade" FontSize="Medium"
+                TextColor="Black"/>
+            <Label Text="Modalidade: " FontSize="Medium"
+                TextColor="#690000"/>
+            <Entry x:Name="txt_modalidade" FontSize="Medium"
+                TextColor="Black" />
+            <Label Text="Peso: " FontSize="Medium"
+                TextColor="#690000"/>
+            <Entry x:Name="txt_peso" FontSize="Medium"
+                TextColor="Black" />
+            <Button Text="Enviar" x:Name="btn_enviar" FontSize="Medium"
+                BackgroundColor="#690000" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" CornerRadius="20"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
