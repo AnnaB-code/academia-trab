@@ -17,7 +17,6 @@ Sistema de gerenciamento para academias desenvolvido com Xamarin Forms. Permite 
 
 - **Xamarin.Forms 5.0.0**: Framework multiplataforma para desenvolvimento mobile
 - **SQLite**: Banco de dados local para armazenamento de informações
-- **MySQL.Data 9.0.0**: Suporte para banco de dados MySQL
 - **.NET Standard 2.0**: Compatibilidade entre plataformas
 
 ## 📱 Plataformas Suportadas
@@ -68,7 +67,6 @@ academia/
 - `Xamarin.Forms` (v5.0.0.2196)
 - `Xamarin.Essentials` (v1.7.0)
 - `sqlite-net-pcl` (v1.9.172)
-- `MySql.Data` (v9.0.0)
 
 ## 🛠️ Como Executar
 
